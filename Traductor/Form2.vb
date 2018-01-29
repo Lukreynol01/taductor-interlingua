@@ -2,17 +2,14 @@
     Dim index As Integer
     Dim id As Integer
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        id = DataGridView1.Rows.Count + 1
+        'Dim sql_ultimo As Integer = "SELECT max(id) FROM Esp_Int"
+        id = Me.Traduccion_Esp_Int2DataSet.Esp_Int.Compute("Max (id)", Nothing) + 1
         Me.Traduccion_Esp_Int2DataSet.Esp_Int.Rows.Add(id, TextBox1.Text, TextBox2.Text)
 
         'Me.DataGridView1.ClearSelection()
         DataGridView1.Rows(Me.Traduccion_Esp_Int2DataSet.Esp_Int.Rows.Count - 1).Selected = True
         DataGridView1.FirstDisplayedScrollingRowIndex = Me.Traduccion_Esp_Int2DataSet.Esp_Int.Rows.Count - 1
         Me.DataGridView1.Refresh()
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 

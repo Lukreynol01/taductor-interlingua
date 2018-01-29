@@ -39,8 +39,13 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RespaldarBaseDeDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RestaurarBaseDeDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerSiHayCopiaDeSeguridadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DiccionarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarActualizacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.EspIntBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,7 +174,7 @@ Partial Class Form1
         '
         'InicioToolStripMenuItem
         '
-        Me.InicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
+        Me.InicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.RespaldarBaseDeDatosToolStripMenuItem, Me.RestaurarBaseDeDatosToolStripMenuItem, Me.VerSiHayCopiaDeSeguridadToolStripMenuItem})
         Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
         Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.InicioToolStripMenuItem.Text = "Inicio"
@@ -177,8 +182,26 @@ Partial Class Form1
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'RespaldarBaseDeDatosToolStripMenuItem
+        '
+        Me.RespaldarBaseDeDatosToolStripMenuItem.Name = "RespaldarBaseDeDatosToolStripMenuItem"
+        Me.RespaldarBaseDeDatosToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.RespaldarBaseDeDatosToolStripMenuItem.Text = "Respaldar Base de Datos"
+        '
+        'RestaurarBaseDeDatosToolStripMenuItem
+        '
+        Me.RestaurarBaseDeDatosToolStripMenuItem.Name = "RestaurarBaseDeDatosToolStripMenuItem"
+        Me.RestaurarBaseDeDatosToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.RestaurarBaseDeDatosToolStripMenuItem.Text = "Restaurar Base de Datos"
+        '
+        'VerSiHayCopiaDeSeguridadToolStripMenuItem
+        '
+        Me.VerSiHayCopiaDeSeguridadToolStripMenuItem.Name = "VerSiHayCopiaDeSeguridadToolStripMenuItem"
+        Me.VerSiHayCopiaDeSeguridadToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.VerSiHayCopiaDeSeguridadToolStripMenuItem.Text = "Ver si hay copia de seguridad"
         '
         'DiccionarioToolStripMenuItem
         '
@@ -188,9 +211,22 @@ Partial Class Form1
         '
         'AcercaDeToolStripMenuItem
         '
+        Me.AcercaDeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem1, Me.BuscarActualizacionesToolStripMenuItem})
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
+        '
+        'AcercaDeToolStripMenuItem1
+        '
+        Me.AcercaDeToolStripMenuItem1.Name = "AcercaDeToolStripMenuItem1"
+        Me.AcercaDeToolStripMenuItem1.Size = New System.Drawing.Size(192, 22)
+        Me.AcercaDeToolStripMenuItem1.Text = "Acerca de"
+        '
+        'BuscarActualizacionesToolStripMenuItem
+        '
+        Me.BuscarActualizacionesToolStripMenuItem.Name = "BuscarActualizacionesToolStripMenuItem"
+        Me.BuscarActualizacionesToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
+        Me.BuscarActualizacionesToolStripMenuItem.Text = "Buscar actualizaciones"
         '
         'Button3
         '
@@ -269,4 +305,9 @@ Partial Class Form1
     Friend WithEvents PluralmascDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MorfologiaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents EspIntBindingSource As BindingSource
+    Friend WithEvents RespaldarBaseDeDatosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RestaurarBaseDeDatosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VerSiHayCopiaDeSeguridadToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AcercaDeToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents BuscarActualizacionesToolStripMenuItem As ToolStripMenuItem
 End Class

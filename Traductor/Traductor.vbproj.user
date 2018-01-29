@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>publish\</PublishUrlHistory>
-    <InstallUrlHistory />
+    <PublishUrlHistory>publish\|C:\Users\Luciano\Documents\Visual Studio 2017\Projects\Traductor\Traductor\publish\|ftp://ftp.intermoneda.com/|ftp://ftp.intermoneda.com/http:/traductor.intermoneda.com/|ftp.traductor.intermoneda.com\</PublishUrlHistory>
+    <InstallUrlHistory>http://traductor.intermoneda.com/</InstallUrlHistory>
     <SupportUrlHistory>https://github.com/Lukreynol01|http://intermoneda.com</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

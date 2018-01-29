@@ -187,6 +187,7 @@ Partial Class Form2
         '
         'Button5
         '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(391, 24)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(95, 94)
